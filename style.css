@@ -314,7 +314,46 @@ h3 {
 }
 
 /* ============================================================
-   8. CARDS, CHIPS, BUTTONS
+   8. HERO — profile image + text
+   ============================================================ */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.hero-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  box-shadow: 0 12px 32px var(--accent-soft);
+  flex-shrink: 0;
+  transition: border-color .35s ease, box-shadow .35s ease;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Horizontal layout: image beside text */
+[data-layout="horizontal"] .hero-content {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ============================================================
+   9. CARDS, CHIPS, BUTTONS
    ============================================================ */
 .card {
   background: var(--card);
@@ -384,7 +423,7 @@ h3 {
 .cta-row { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1.4rem; }
 
 /* ============================================================
-   9. CONTACT FORM
+   10. CONTACT FORM
    ============================================================ */
 .contact-layout {
   display: grid;
@@ -447,7 +486,7 @@ h3 {
 .form-status.error   { color: #ef4444; }
 
 /* ============================================================
-   10. FOOTER
+   11. FOOTER
    ============================================================ */
 .site-footer {
   flex: 0 0 auto;
@@ -461,7 +500,7 @@ h3 {
 }
 
 /* ============================================================
-   11. RESPONSIVE
+   12. RESPONSIVE
    ============================================================ */
 @media (max-width: 1000px) {
   .main-nav {
@@ -490,6 +529,16 @@ h3 {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.35rem; }
   .card { padding: 1.05rem 1.1rem; }
+
+  /* Stack the avatar above the text even in horizontal mode */
+  [data-layout="horizontal"] .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-avatar {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

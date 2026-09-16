@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aniruddh Rao — AI Software Engineer</title>
 
-  <!-- Inline SVG favicon: always loads, never 404s -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%234d8dff' width='100' height='100' rx='22'/><text x='50' y='70' font-size='58' font-family='Arial,sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AR</text></svg>">
+  <!-- ============================================================
+       FAVICON
+       Replace PASTE_YOUR_ICON_URL_HERE with your icon URL.
+       Examples:
+         https://example.com/favicon.ico
+         https://example.com/icon.png
+         ./favicon.ico            (file in the same folder)
+       ============================================================ -->
+  <link rel="icon" href="WhatsApp Image 2026-03-26 at 4.31.18 PM-pixeltools.ico">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -46,8 +53,8 @@
         <div class="control-group">
           <span class="control-label">Theme</span>
           <div class="segmented" id="themeControl">
-            <button type="button" class="seg-btn"        data-theme="light">Light</button>
-            <button type="button" class="seg-btn active" data-theme="dark">Dark</button>
+            <button type="button" class="seg-btn"        data-set-theme="light">Light</button>
+            <button type="button" class="seg-btn active" data-set-theme="dark">Dark</button>
           </div>
         </div>
 
@@ -80,20 +87,44 @@
 
     <!-- HERO -->
     <section class="panel" id="hero">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>Aniruddh Rao</h1>
-      <p class="role">AI Software Engineer</p>
-      <p class="meta">Bhopal, India · +91 9302629271</p>
-      <p class="lead">
-        Motivated AI/ML graduate with hands-on experience in Python, FastAPI,
-        Generative AI and full-stack development. I build intelligent, scalable
-        software solutions.
-      </p>
-      <div class="cta-row">
-        <a class="btn" href="https://www.linkedin.com/in/aniruddh-rao-a4a6613a5/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/aniruddhrao1901" target="_blank" rel="noopener">GitHub</a>
+
+      <div class="hero-content">
+
+        <!-- ============================================================
+             PROFILE IMAGE
+             Replace PASTE_YOUR_PHOTO_URL_HERE with your photo URL.
+             Examples:
+               https://example.com/my-photo.jpg
+               ./images/profile.png       (file in an "images" folder)
+             ============================================================ -->
+        <div class="hero-avatar">
+          <img
+            src="WhatsApp Image 2026-09-17 at 4.46.31 AM.jpeg"
+            alt="Aniruddh Rao"
+            loading="eager"
+            onerror="this.style.display='none'"
+          >
+        </div>
+
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Aniruddh Rao</h1>
+          <p class="role">AI Software Engineer</p>
+          <p class="meta">Bhopal, India · +91 9302629271</p>
+          <p class="lead">
+            Motivated AI/ML graduate with hands-on experience in Python, FastAPI,
+            Generative AI and full-stack development. I build intelligent, scalable
+            software solutions.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="https://www.linkedin.com/in/aniruddh-rao-a4a6613a5/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/aniruddhrao1901" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <p class="scroll-hint" id="scrollHint">Scroll down to explore</p>
+        </div>
+
       </div>
-      <p class="scroll-hint" id="scrollHint">Scroll down to explore</p>
+
     </section>
 
     <!-- ABOUT -->
@@ -162,13 +193,6 @@
           <p><strong>GitHub:</strong> <a href="https://github.com/aniruddhrao1901" target="_blank" rel="noopener">aniruddhrao1901</a></p>
         </div>
 
-        <!-- --------------------------------------------------------
-             CONTACT FORM
-             Works with NO JavaScript thanks to the action + method.
-             First submission: FormSubmit sends you one confirmation
-             email → click the link → every future submission lands
-             straight in your Gmail inbox.
-             -------------------------------------------------------- -->
         <form
           id="contactForm"
           class="card contact-form"
@@ -177,7 +201,6 @@
           novalidate
         >
 
-          <!-- FormSubmit configuration (hidden) -->
           <input type="hidden" name="_subject"  value="[Portfolio] New contact message">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha"  value="false">
@@ -222,7 +245,6 @@
     <p>&copy; 2026 Aniruddh Rao. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts loaded at the END so the DOM is ready -->
   <script src="script.js"></script>
 </body>
 </html>

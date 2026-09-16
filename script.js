@@ -12,9 +12,7 @@
 (function () {
   'use strict';
 
-  /* ------------------------------------------------------------
-     DIAGNOSTIC — you should see this line in the F12 console
-     ------------------------------------------------------------ */
+  /* Diagnostic — confirms the file actually loaded */
   console.log('%c[Portfolio] script.js loaded ✓',
     'color:#0f0;font-weight:bold');
 
@@ -121,9 +119,8 @@
 
   /* ============================================================
      2. THEME  (light / dark)
-     ------------------------------------------------------------
-     Reads `data-set-theme` from the buttons (falls back to
-     `data-theme` if you haven't renamed them yet).
+     Reads `data-set-theme` from buttons (falls back to
+     `data-theme` for older markup).
      ============================================================ */
   function initTheme() {
     var html = document.documentElement;
@@ -411,12 +408,11 @@
       .catch(function (err) {
         console.warn('[Portfolio] AJAX failed, using native form POST:', err);
 
-        /* Fallback: let the browser do a real POST to FormSubmit.
+        /* Fallback: real HTML POST to FormSubmit.
            form.submit() bypasses the submit event, so we don't loop. */
         setStatus('Opening secure send page…', '');
         HTMLFormElement.prototype.submit.call(form);
 
-        /* If the fallback also didn't navigate (rare), restore the button */
         setTimeout(function () {
           submitBtn.disabled    = false;
           submitBtn.textContent = 'Send Message';
