@@ -1,178 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-layout="vertical" data-theme="dark" data-color="blue">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aniruddh Bhate | AI Software Engineer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="WhatsApp Image 2026-03-26 at 4.31.18 PM-pixeltools.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniruddh Rao — AI Software Engineer</title>
+
+  <!-- Inline SVG favicon: always loads, never 404s -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%234d8dff' width='100' height='100' rx='22'/><text x='50' y='70' font-size='58' font-family='Arial,sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AR</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header / Navigation -->
-    <header>
-        <div class="profile-image">
-            <img src="WhatsApp Image 2026-03-26 at 4.31.18 PM-pixeltools.ico" alt="MyImage">
-        </div>
-        <nav>
-            <div class="logo">Aniruddh.dev</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="loginBtn" class="login-btn">Login</button>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Aniruddh Rao</h1>
-            <p class="title">AI Software Engineer</p>
-            <p class="location">Bhopal, India | +91 9302629271</p>
-            <p>
-                Motivated AI/ML graduate with expertise in Python, FastAPI, Generative AI,
-                and full-stack development. Building intelligent software solutions.
-            </p>
-            <div class="hero-links">
-                <a href="https://www.linkedin.com/in/aniruddh-bhate-a4a6613a5/" target="_blank"
-                    class="cta-button">LinkedIn</a>
-                <a href="https://github.com/aniruddhbhate1901" target="_blank" class="cta-button secondary">GitHub</a>
-            </div>
-        </div>
-    </section>
+  <!-- ============================================================
+       HEADER — brand, nav, controls
+       ============================================================ -->
+  <header class="site-header">
+    <div class="header-inner">
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate AI Software Engineering graduate with knowledge of Python, FastAPI,
-            HTML, CSS, JavaScript, MySQL, Machine Learning, Git, and Generative AI.
-            I am seeking an entry-level AI/ML or AI Software Engineer role where I can build
-            intelligent, scalable software solutions.
-        </p>
-        <div class="education">
-            <h3>Education</h3>
-            <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
-            <p>Makhanlal Chaturvedi National University of Journalism and Communication, Bhopal</p>
-            <p>Jul 2023 – Jun 2026 | CGPA: 7.1</p>
-        </div>
-    </section>
+      <a href="#hero" class="brand">
+        <span class="brand-mark">AR</span>
+        <span class="brand-name">Aniruddh Rao</span>
+      </a>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">Python</div>
-            <div class="skill-card">JavaScript (ES6+)</div>
-            <div class="skill-card">HTML5 & CSS3</div>
-            <div class="skill-card">FastAPI</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">TensorFlow</div>
-            <div class="skill-card">NumPy & Pandas</div>
-            <div class="skill-card">Matplotlib & Seaborn</div>
-            <div class="skill-card">LangChain</div>
-            <div class="skill-card">Generative AI</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">Data Structures (DSA)</div>
-        </div>
-    </section>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>AI-Powered Mock Interview System</h3>
-                <p>
-                    Developed an AI-powered mock interview platform for technical and HR interview preparation.
-                    Used Generative AI for adaptive question generation and real-time practice.
-                </p>
-                <p class="tech-stack"><strong>Tech:</strong> Python, FastAPI, HTML, CSS, JS, MySQL, Gen AI</p>
-            </div>
-            <div class="project-card">
-                <h3>This Portfolio</h3>
-                <p>
-                    Personal portfolio built with vanilla HTML, CSS, and JavaScript.
-                    Demonstrates full SDLC workflow and is deployed continuously via Vercel.
-                </p>
-                <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Vercel</p>
-            </div>
-        </div>
-    </section>
+      <div class="controls" role="group" aria-label="Display settings">
 
-    <!-- Achievements & Certifications -->
-    <section id="achievements">
-        <h2>Achievements & Certifications</h2>
-        <div class="achievement-grid">
-            <div class="achievement-card">
-                <h3>🏆 Hackathons</h3>
-                <ul>
-                    <li>Participant – Sageathon 2026</li>
-                    <li>Participant – HackNova Hackathon 2026</li>
-                </ul>
-            </div>
-            <div class="achievement-card">
-                <h3>🏅 Competitions</h3>
-                <ul>
-                    <li>Winner – Debate Competition</li>
-                    <li>Winner – Company Presentation Competition</li>
-                    <li>3rd Prize – (Hackathon Name - Update Later)</li>
-                </ul>
-            </div>
-            <div class="achievement-card">
-                <h3>📜 Certifications</h3>
-                <ul>
-                    <li>Python Programming</li>
-                    <li>Machine Learning</li>
-                    <li>Artificial Intelligence</li>
-                </ul>
-            </div>
+        <!-- Layout -->
+        <div class="control-group">
+          <span class="control-label">Layout</span>
+          <div class="segmented" id="layoutControl">
+            <button type="button" class="seg-btn active" data-layout="vertical">Vertical</button>
+            <button type="button" class="seg-btn"        data-layout="horizontal">Horizontal</button>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <p><strong>Email:</strong> aniruddhbhate2005@gmail.com</p>
-            <p><strong>Phone:</strong> +91 9302629271</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aniruddh-bhate-a4a6613a5/"
-                    target="_blank">aniruddh-bhate</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/aniruddhbhate1901"
-                    target="_blank">aniruddhbhate1901</a></p>
+        <!-- Theme -->
+        <div class="control-group">
+          <span class="control-label">Theme</span>
+          <div class="segmented" id="themeControl">
+            <button type="button" class="seg-btn"        data-theme="light">Light</button>
+            <button type="button" class="seg-btn active" data-theme="dark">Dark</button>
+          </div>
         </div>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
 
-    <!-- Login Modal (hidden by default) -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Login</h2>
-            <form id="loginForm">
-                <input type="text" placeholder="Username" required />
-                <input type="password" placeholder="Password" required />
-                <button type="submit">Login</button>
-            </form>
+        <!-- Colour -->
+        <div class="control-group">
+          <span class="control-label">Colour</span>
+          <div class="swatches" id="colorControl">
+            <button type="button" class="swatch active" data-color="blue"   aria-label="Blue"></button>
+            <button type="button" class="swatch"        data-color="purple" aria-label="Purple"></button>
+            <button type="button" class="swatch"        data-color="green"  aria-label="Green"></button>
+            <button type="button" class="swatch"        data-color="red"    aria-label="Red"></button>
+            <button type="button" class="swatch"        data-color="orange" aria-label="Orange"></button>
+            <button type="button" class="swatch"        data-color="yellow" aria-label="Yellow"></button>
+            <button type="button" class="swatch"        data-color="pink"   aria-label="Pink"></button>
+            <button type="button" class="swatch"        data-color="cyan"   aria-label="Cyan"></button>
+            <button type="button" class="swatch"        data-color="teal"   aria-label="Teal"></button>
+            <button type="button" class="swatch"        data-color="indigo" aria-label="Indigo"></button>
+          </div>
         </div>
+
+      </div>
     </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2026 Aniruddh Bhate. Built with ❤️ and deployed on Vercel.</p>
-        <p>Thanks you for read till end.</p>
-    </footer>
 
-    <script src="login.js"></script>
+  <!-- ============================================================
+       MAIN — scroll region
+       ============================================================ -->
+  <main class="page" id="page">
+
+    <!-- HERO -->
+    <section class="panel" id="hero">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Aniruddh Rao</h1>
+      <p class="role">AI Software Engineer</p>
+      <p class="meta">Bhopal, India · +91 9302629271</p>
+      <p class="lead">
+        Motivated AI/ML graduate with hands-on experience in Python, FastAPI,
+        Generative AI and full-stack development. I build intelligent, scalable
+        software solutions.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="https://www.linkedin.com/in/aniruddh-rao-a4a6613a5/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/aniruddhrao1901" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="scroll-hint" id="scrollHint">Scroll down to explore</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="panel" id="about">
+      <h2>About Me</h2>
+      <p class="lead">
+        I'm a final-year BCA student specialising in Artificial Intelligence and
+        Machine Learning. My interests span backend engineering, applied ML and
+        building practical AI products with modern Python tooling.
+      </p>
+      <div class="card">
+        <h3>Education</h3>
+        <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
+        <p>Makhanlal Chaturvedi National University of Journalism and Communication, Bhopal</p>
+        <p class="muted">Jul 2023 – Jun 2026 · CGPA 7.1</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="panel" id="skills">
+      <h2>Skills</h2>
+      <ul class="chip-list">
+        <li class="chip">Python</li>
+        <li class="chip">JavaScript (ES6+)</li>
+        <li class="chip">HTML5 &amp; CSS3</li>
+        <li class="chip">FastAPI</li>
+        <li class="chip">MySQL</li>
+        <li class="chip">TensorFlow</li>
+        <li class="chip">NumPy &amp; Pandas</li>
+        <li class="chip">Matplotlib &amp; Seaborn</li>
+        <li class="chip">LangChain</li>
+        <li class="chip">Generative AI</li>
+        <li class="chip">Git &amp; GitHub</li>
+        <li class="chip">Data Structures &amp; Algorithms</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="panel" id="projects">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>AI-Powered Mock Interview System</h3>
+          <p>An interview preparation platform that generates adaptive technical and HR questions in real time using Generative AI.</p>
+          <p class="tech"><strong>Stack:</strong> Python, FastAPI, HTML, CSS, JS, MySQL, Gen AI</p>
+        </article>
+        <article class="card">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive portfolio with switchable layout direction, light/dark theme and ten accent colours — built with vanilla HTML, CSS and JS.</p>
+          <p class="tech"><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="panel" id="contact">
+      <h2>Contact Me</h2>
+
+      <div class="contact-layout">
+
+        <div class="card contact-details">
+          <h3>Get in touch</h3>
+          <p><strong>Email:</strong> <a href="mailto:aniruddhrao012005@gmail.com">aniruddhrao012005@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919302629271">+91 9302629271</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aniruddh-rao-a4a6613a5/" target="_blank" rel="noopener">aniruddh-rao</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/aniruddhrao1901" target="_blank" rel="noopener">aniruddhrao1901</a></p>
+        </div>
+
+        <!-- --------------------------------------------------------
+             CONTACT FORM
+             Works with NO JavaScript thanks to the action + method.
+             First submission: FormSubmit sends you one confirmation
+             email → click the link → every future submission lands
+             straight in your Gmail inbox.
+             -------------------------------------------------------- -->
+        <form
+          id="contactForm"
+          class="card contact-form"
+          action="https://formsubmit.co/aniruddhrao012005@gmail.com"
+          method="POST"
+          novalidate
+        >
+
+          <!-- FormSubmit configuration (hidden) -->
+          <input type="hidden" name="_subject"  value="[Portfolio] New contact message">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha"  value="false">
+
+          <h3>Send a message</h3>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name">
+            <p class="field-error" id="nameError" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <p class="field-error" id="emailError" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this about?">
+            <p class="field-error" id="subjectError" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message…"></textarea>
+            <p class="field-error" id="messageError" role="alert"></p>
+          </div>
+
+          <button type="submit" class="btn submit-btn" id="submitBtn">Send Message</button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Aniruddh Rao. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts loaded at the END so the DOM is ready -->
+  <script src="script.js"></script>
 </body>
-
 </html>
